@@ -1,0 +1,487 @@
+/* ===== переменные ===== */
+:root {
+	--colorbluenav: rgba(31, 69, 144, 1);
+	--colororangenav: rgba(255, 164, 81, 1);
+	--colorblue: rgba(0, 11, 255, 1);
+	--colororange: rgba(255, 164, 81, 1);
+	--colorbutton: rgba(184, 71, 125, 1);
+	--colortextbutton: rgba(255, 255, 255, 1);
+	--formwrapcolor: rgba(184, 71, 126, 0.7);
+	--colorboxshadow: rgba(226, 252, 255, 1);
+	--footerbackground: rgba(51, 51, 51, 1);
+}
+
+/* ! === Сброс стилей === */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ! === Общие стили === */
+
+html {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	line-height: 1.5;
+}
+
+.container {
+	min-height: 100vh;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+h1,
+h2 {
+	background: linear-gradient(to right, var(--colorblue), var(--colororange));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h1 {
+	font-size: 3.6rem;
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.yoga__foto {
+	max-width: 350px;
+	margin: 5px;
+	padding: 10px;
+}
+
+.yoga__foto img {
+	max-width: 100%;
+}
+
+/* ! === стили header === */
+
+.header {
+	background-image: url(img/header_backgrond.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right top;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.logo {
+	width: 230px;
+	max-width: 30%;
+	display: flex;
+	margin: 0 5px 0 7%;
+}
+
+.logo img {
+	width: 90%;
+	margin: 5px auto;
+}
+
+.navigation {
+	display: none;
+	margin-right: 10%;
+}
+
+.navigation li {
+	display: inline;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--colorbluenav);
+}
+
+.navigation .active {
+	color: var(--colororangenav);
+}
+
+.navigation li:not(.navigation li:first-child) {
+	margin-left: 60px;
+}
+
+.header-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 100px;
+}
+
+.header__text {
+	max-width: 600px;
+	margin: 5px;
+}
+
+/* ! ===  Why Choose YogaKita === */
+
+.why-choose {
+	margin-top: 100px;
+}
+
+.why-choose-content {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.why-choose-content h2,
+.why-choose-content p {
+	text-align: center;
+	width: 100%;
+}
+
+.why-choose-advantages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+}
+
+.why-choose-advantages__item {
+	max-width: 330px;
+	margin-top: 50px;
+}
+
+.advantages-foto {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	max-width: 130px;
+}
+
+.advantages-foto img {
+	width: 100%;
+}
+
+.why-choose-advantages__item h3 {
+	text-align: center;
+
+}
+
+.why-choose-advantages__item p {
+	text-align: center;
+	width: 100%;
+}
+
+/* ---------- figure on the right ---------- */
+
+.figure-right-wrapper {
+	display: flex;
+	justify-content: flex-end
+}
+
+.figure-right {
+	width: 12%;
+	position: relative;
+}
+
+.figure-right img {
+	width: 100%;
+	position: absolute;
+	top: -50px;
+	right: 0;
+}
+
+/* ! ===  3-й блок Whats on YogaKita === */
+
+.whats-on-yogakita {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.whats-on-yogakita__text {
+	max-width: 460px;
+}
+
+.whats-on-yogakita__text h4 {
+	margin-bottom: 10px;
+}
+
+.whats-on-yogakita__text p {
+	margin-bottom: 20px;
+}
+
+/* ! === 4-й блок The Healing Power 1 === */
+
+.healig-power-1 {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.healig-power-1__text {
+	max-width: 460px;
+}
+
+/* ! === 5-й блок The Healing Power 2 === */
+
+.healig-power-2 {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.healig-power-2__text {
+	max-width: 460px;
+}
+
+/* ---------- figure on the left ---------- */
+
+.figure-left {
+	width: 10%;
+	position: relative;
+	top: -10px;
+	left: 0;
+}
+
+.figure-left img {
+	width: 100%;
+	position: absolute;
+}
+
+/* ! === 6-й блок Pricing === */
+
+.pricing {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.pricing-plan-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding-bottom: 20px;
+	margin-top: 50px;
+}
+
+.pricing-plan__item {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 30%;
+	max-width: 300px;
+	min-width: 200px;
+	padding: 50px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	box-shadow: 10px 10px 10px 1px var(--colorboxshadow), -5px -5px 10px 1px var(--colorboxshadow);
+}
+
+.pricing-plan__item:nth-child(2) {
+	margin: 30px 30px;
+	position: relative;
+}
+
+.pricing-plan__item:nth-child(2)::before {
+	position: absolute;
+	content: "MOST PRODUCTIVE";
+	top: 3%;
+	left: 65%;
+	font-family: inherit;
+	font-size: 1.2rem;
+	line-height: inherit;
+	font-weight: 400;
+	width: 70px;
+	border: 1px double black;
+	border-radius: 10px;
+	padding: 10px;
+	transform: rotate(10deg);
+	color: black;
+	background: linear-gradient(30deg, transparent, var(--formwrapcolor), transparent);
+}
+
+.plan-name {
+	font-size: 6rem;
+	line-height: 0.9;
+	font-weight: 700;
+	color: var(--colorbutton);
+	text-shadow: 0 0 5px var(--footerbackground);
+}
+
+.plan-plan {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--colorbutton);
+	margin-bottom: 20px;
+	text-shadow: 0 0 3px var(--footerbackground);
+}
+
+.plan-cost {
+	font-size: 1.8rem;
+	font-weight: 700;
+
+}
+
+.plan-month {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.plan-explanation {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.plan-select {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: 700;
+	line-height: inherit;
+	margin-top: 40px;
+	padding: 10px;
+	background-color: var(--colorbutton);
+	color: var(--colortextbutton);
+	border: none;
+	border-radius: 20px;
+}
+
+/* ! === 7-й блок Contact Us.  === */
+
+.contact-wrap {
+	margin-top: 100px;
+	text-align: center;
+	padding: 50px 10px;
+	background: url(img/layer-top.png) no-repeat 5% 5%,
+		url(img/layer-bottom.png) no-repeat 95% 95%,
+		rgba(226, 252, 255, 1);
+
+}
+
+.form-wrap {
+	margin: 0 auto;
+	padding: 20px 10px;
+	width: clamp(160px, 80%, 500px);
+	border-radius: 10px;
+	background-color: var(--formwrapcolor);
+
+}
+
+.form-group {
+	margin: 20px 0;
+}
+
+.form-control {
+	border-radius: 10px;
+	width: 100%;
+	height: 50px;
+	font-family: inherit;
+	line-height: inherit;
+	font-size: 1.6rem;
+	font-weight: 400;
+	padding: 2px 10px;
+}
+
+.form-group button {
+	font-family: inherit;
+	line-height: inherit;
+	font-size: 1.6rem;
+	font-weight: 600;
+	border: 1px solid transparent;
+	padding: 10px 50px;
+	border-radius: 50px;
+	background-color: var(--colorbutton);
+	color: var(--colortextbutton);
+}
+
+/* ! === 8-й блок Footer.  === */
+
+.footer-wrap {
+	min-height: 60px;
+	background-color: var(--footerbackground);
+	color: var(--colortextbutton);
+	font-family: inherit;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: inherit;
+	margin-top: 50px;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.footer-logo {
+	font-weight: 600;
+	padding: 2px 5px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.footer-design a {
+	font-family: inherit;
+	line-height: inherit;
+	color: var(--colortextbutton);
+}
+
+.valid {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* ! ==========  ========== */
+@media (max-width: 831px) {
+
+	.healig-power-1 {
+		flex-direction: column-reverse;
+	}
+
+	.pricing-plan__item {
+		width: 70%;
+	}
+
+	.footer-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-copyright {
+		margin: 5px 0;
+	}
+
+}
